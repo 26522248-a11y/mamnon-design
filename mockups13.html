@@ -1,0 +1,50 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{mint:{50:'#ECFBF6',100:'#D2F5E9',500:'#2EBF91',700:'#1B7F62'},peach:{100:'#FFE3CF',500:'#FF8A4C'},sun:{100:'#FFF6CC',500:'#FFCB2F'},rose:{100:'#FFE4E8',500:'#F2546B'},sky:{100:'#E3F1FF',500:'#4DA3FF'},ink:{900:'#1F2A37',500:'#6B7A8C',100:'#EEF1F5'},cream:'#FFFCF7'},fontFamily:{sans:['Be Vietnam Pro']}}}}</script>
+<style>.ph{width:330px;height:690px;border-radius:40px;border:8px solid #1F2A37;background:#FFFCF7;overflow:hidden;position:relative;flex:none}.cap{font-size:13px;color:#6B7A8C;margin-top:8px;width:330px}.qr{background:repeating-conic-gradient(#1F2A37 0 25%,#fff 0 50%) 0 0/14px 14px}</style>
+</head><body class="bg-ink-100 font-sans text-ink-900 p-8" style="width:1500px">
+<h1 class="text-3xl font-bold mb-2">📸 A1–A2 – Đồng ý đăng hình con lên nhóm lớp</h1>
+<div class="flex gap-5 items-start">
+<!-- A1 GV chọn ảnh -->
+<div><div class="ph"><div class="p-4 space-y-3 text-sm">
+<b class="text-lg block">Đăng ảnh lớp Mầm 1</b>
+<div class="rounded-2xl bg-rose-100 p-3"><b class="text-rose-500">🚫 3 bé chưa cho đăng hình</b>
+<div class="flex gap-2 mt-2">
+<div class="text-center text-xs"><div class="w-12 h-12 rounded-full bg-peach-100 border-2 border-rose-500 mx-auto"></div>Gia An</div>
+<div class="text-center text-xs"><div class="w-12 h-12 rounded-full bg-sky-100 border-2 border-rose-500 mx-auto"></div>Minh Khôi</div>
+<div class="text-center text-xs"><div class="w-12 h-12 rounded-full bg-sun-100 border-2 border-rose-500 mx-auto"></div>Bảo Ngọc</div></div>
+<p class="text-xs mt-2 text-ink-500">Ảnh có các bé này sẽ không đăng được.</p></div>
+<div class="grid grid-cols-3 gap-2">
+<div class="aspect-square rounded-xl bg-mint-100 relative"><span class="absolute bottom-1 left-1 text-[10px] bg-white rounded px-1">✓</span></div>
+<div class="aspect-square rounded-xl bg-sky-100 relative ring-4 ring-rose-500"><span class="absolute inset-x-0 bottom-0 bg-rose-500 text-white text-[10px] text-center rounded-b-lg">Có bé Gia An</span></div>
+<div class="aspect-square rounded-xl bg-sun-100 relative"><span class="absolute bottom-1 left-1 text-[10px] bg-white rounded px-1">✓</span></div>
+<div class="aspect-square rounded-xl bg-peach-100"></div>
+<div class="aspect-square rounded-xl bg-mint-50"></div>
+<div class="aspect-square rounded-xl bg-sky-100"></div></div>
+<div class="rounded-2xl border-2 border-rose-500 p-3 bg-white"><b>Ảnh 2 có bé Gia An (chưa đồng ý)</b>
+<div class="grid grid-cols-2 gap-2 mt-2"><button class="h-12 rounded-xl border border-ink-100 font-semibold">🗑 Bỏ ảnh này</button><button class="h-12 rounded-xl bg-ink-900 text-white font-semibold">🙈 Ẩn bé đi</button></div></div>
+<button class="w-full h-14 rounded-2xl bg-ink-100 text-ink-500 font-semibold">Đăng 6 ảnh · còn 1 ảnh cần xử lý</button>
+</div></div><p class="cap"><b>A1 · Giáo viên chọn ảnh.</b> Ảnh gắn bé chưa đồng ý bị viền đỏ và khóa nút Đăng. Cô chỉ cần bỏ ảnh hoặc ẩn bé (hiddenForChildIds). Server cũng chặn.</p></div>
+<!-- A2 hỏi lần đầu -->
+<div><div class="ph"><div class="absolute inset-0 bg-ink-900/40 flex items-end"><div class="bg-white w-full rounded-t-3xl p-5 space-y-4 text-[17px]">
+<div class="text-4xl text-center">📸</div>
+<b class="block text-xl text-center">Cho cô đăng hình con lên nhóm lớp?</b>
+<p class="text-ink-500 text-center">Chỉ phụ huynh trong lớp Mầm 1 xem được. Bạn đổi lại được bất cứ lúc nào ở mục Tài khoản.</p>
+<button class="w-full h-14 rounded-2xl bg-mint-500 text-white font-bold">Có, cho đăng</button>
+<button class="w-full h-14 rounded-2xl border-2 border-ink-100 font-bold">Không</button></div></div></div>
+<p class="cap"><b>A2 · Lần đầu mở app.</b> Hỏi đúng một lần, phải chọn mới đóng được. Các lần mở sau không hiện lại.</p></div>
+<!-- A2 tài khoản -->
+<div><div class="ph"><div class="p-4 space-y-3 text-[17px]"><b class="text-xl block">Tài khoản</b>
+<div class="rounded-2xl bg-white p-4 shadow-sm"><b>Cho cô đăng hình con lên nhóm lớp</b>
+<div class="grid grid-cols-2 gap-2 mt-3"><button class="h-14 rounded-xl bg-mint-500 text-white font-bold">✓ Có</button><button class="h-14 rounded-xl border-2 border-ink-100 font-semibold">Không</button></div>
+<p class="text-[15px] text-ink-500 mt-2">Đổi lúc 08:12, 09/10 · trường đã được báo</p></div>
+<div class="rounded-2xl bg-white p-4 shadow-sm text-ink-500">👤 Thông tin của tôi ›</div>
+<div class="rounded-2xl bg-white p-4 shadow-sm text-ink-500">🔔 Thông báo ›</div></div></div>
+<p class="cap"><b>A2 · Đổi trong Tài khoản.</b> Bấm là lưu ngay, hiện "Đã lưu". Mỗi lần đổi ghi một dòng vào Lịch sử thay đổi.</p></div>
+<!-- A2 lịch sử -->
+<div><div class="ph"><div class="p-4 space-y-3 text-sm"><b class="text-lg block">Lịch sử thay đổi</b>
+<div class="rounded-2xl bg-white p-3 shadow-sm border-l-4 border-rose-500"><b>Đồng ý đăng hình: Có → Không</b><p class="text-ink-500">Bé Gia An · PH Nguyễn Thị Phúc · 09/10 08:12</p></div>
+<div class="rounded-2xl bg-white p-3 shadow-sm border-l-4 border-mint-500"><b>Đồng ý đăng hình: Chưa hỏi → Có</b><p class="text-ink-500">Bé Gia An · PH Nguyễn Thị Phúc · 01/10 19:40</p></div></div></div>
+<p class="cap"><b>A2 · BGH xem ở /sensitive-changes.</b> Ghi đủ bé, người đổi, giá trị cũ → mới, thời gian.</p></div>
+</div></body></html>
