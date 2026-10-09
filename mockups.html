@@ -1,0 +1,63 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{mint:{50:'#ECFBF6',100:'#D2F5E9',500:'#2EBF91',600:'#22A07A',700:'#1B7F62'},peach:{100:'#FFE3CF',500:'#FF8A4C'},sun:{100:'#FFF6CC',500:'#FFCB2F'},rose:{100:'#FFE4E8',500:'#F2546B'},ink:{900:'#1F2A37',500:'#6B7A8C',100:'#EEF1F5'},cream:'#FFFCF7'},fontFamily:{sans:['Be Vietnam Pro']}}}}</script>
+</head><body class="bg-ink-100 font-sans text-ink-900 p-8 space-y-10" style="width:1500px">
+<h1 class="text-3xl font-bold">🌱 Mầm Xanh – UI tuần 1</h1>
+<!-- FLOW -->
+<section class="bg-white rounded-3xl p-6 shadow">
+<h2 class="text-xl font-semibold mb-4">Luồng màn hình</h2>
+<div class="flex items-center gap-3 text-sm flex-wrap">
+<span class="px-4 py-2 rounded-xl bg-mint-100">Đăng nhập</span>→
+<span class="px-4 py-2 rounded-xl bg-peach-100">Phân vai trò</span>→
+<span class="px-4 py-2 rounded-xl bg-white border">BGH: Dashboard → Lớp → Hồ sơ trẻ → Chi tiết bé</span>
+<span class="px-4 py-2 rounded-xl bg-white border">Giáo viên (mobile): Lớp tôi → Điểm danh → Đón trẻ</span>
+<span class="px-4 py-2 rounded-xl bg-white border">Kế toán: Học phí (tuần 2)</span>
+<span class="px-4 py-2 rounded-xl bg-white border">Phụ huynh (mobile, tuần 3): Bé hôm nay → Điểm danh → Thực đơn → Học phí</span>
+</div></section>
+<div class="flex gap-8 items-start">
+<!-- LOGIN -->
+<section class="w-[420px] h-[560px] rounded-3xl overflow-hidden shadow bg-gradient-to-br from-mint-100 to-peach-100 flex items-center justify-center">
+<div class="bg-white w-[340px] rounded-3xl p-8 shadow-xl">
+<div class="text-4xl">🌱</div><h2 class="text-2xl font-bold mt-2">Chào mừng trở lại</h2><p class="text-ink-500 text-sm mb-6">Trường mầm non Mầm Xanh</p>
+<label class="text-sm font-medium">Tên đăng nhập</label><div class="h-12 rounded-xl border border-ink-100 bg-cream mt-1 mb-4 px-4 flex items-center text-ink-500">gv1</div>
+<label class="text-sm font-medium">Mật khẩu</label><div class="h-12 rounded-xl border border-ink-100 bg-cream mt-1 mb-6 px-4 flex items-center">••••••</div>
+<div class="h-12 rounded-xl bg-mint-500 text-white font-semibold flex items-center justify-center shadow-lg">Đăng nhập</div>
+<p class="text-center text-xs text-ink-500 mt-4">Quên mật khẩu? Liên hệ nhà trường</p></div></section>
+<!-- DASHBOARD -->
+<section class="flex-1 h-[560px] rounded-3xl overflow-hidden shadow bg-cream flex">
+<aside class="w-52 bg-white p-5 space-y-2 text-sm"><div class="font-bold text-mint-700 text-lg mb-4">🌱 Mầm Xanh</div>
+<div class="px-3 py-2 rounded-xl bg-mint-500 text-white font-medium">🏠 Tổng quan</div><div class="px-3 py-2">🧒 Hồ sơ trẻ</div><div class="px-3 py-2">🏫 Lớp học</div><div class="px-3 py-2">✅ Điểm danh</div><div class="px-3 py-2">🍎 Dinh dưỡng</div><div class="px-3 py-2">💰 Học phí</div><div class="px-3 py-2">📊 Báo cáo</div></aside>
+<main class="flex-1 p-6 space-y-5"><div class="flex justify-between"><div><h2 class="text-2xl font-bold">Chào buổi sáng, Cô Hạnh ☀️</h2><p class="text-ink-500 text-sm">Thứ Sáu, 09/10/2026 (dữ liệu mẫu)</p></div><div class="h-10 px-4 rounded-xl bg-peach-500 text-white flex items-center text-sm font-semibold">+ Thêm trẻ</div></div>
+<div class="grid grid-cols-4 gap-4">
+<div class="bg-white rounded-2xl p-4 shadow-sm"><p class="text-xs text-ink-500">Tổng số trẻ</p><p class="text-3xl font-bold">268</p></div>
+<div class="bg-mint-50 rounded-2xl p-4"><p class="text-xs text-ink-500">Có mặt</p><p class="text-3xl font-bold text-mint-700">241</p></div>
+<div class="bg-rose-100 rounded-2xl p-4"><p class="text-xs text-ink-500">Vắng</p><p class="text-3xl font-bold text-rose-500">19</p></div>
+<div class="bg-sun-100 rounded-2xl p-4"><p class="text-xs text-ink-500">Đi muộn</p><p class="text-3xl font-bold text-amber-600">8</p></div></div>
+<div class="grid grid-cols-3 gap-4"><div class="col-span-2 bg-white rounded-2xl p-4 shadow-sm"><p class="font-semibold mb-3">Điểm danh theo lớp</p>
+<div class="space-y-3 text-sm"><div>Mầm 1 <div class="h-3 bg-ink-100 rounded-full"><div class="h-3 bg-mint-500 rounded-full w-[92%]"></div></div></div><div>Chồi 2 <div class="h-3 bg-ink-100 rounded-full"><div class="h-3 bg-mint-500 rounded-full w-[85%]"></div></div></div><div>Lá 1 <div class="h-3 bg-ink-100 rounded-full"><div class="h-3 bg-peach-500 rounded-full w-[70%]"></div></div></div></div></div>
+<div class="bg-white rounded-2xl p-4 shadow-sm text-sm"><p class="font-semibold mb-3">Cần chú ý</p><p>⚠️ 3 lớp chưa điểm danh</p><p class="mt-2">🥜 Bé An dị ứng đậu phộng</p><p class="mt-2">🎂 2 bé sinh nhật hôm nay</p></div></div></main></section></div>
+<div class="flex gap-8 items-start">
+<!-- CHILDREN LIST -->
+<section class="flex-1 rounded-3xl shadow bg-white p-6"><div class="flex justify-between mb-4"><h2 class="text-xl font-bold">Hồ sơ trẻ</h2><div class="flex gap-2"><div class="h-10 w-64 rounded-xl bg-ink-100 px-4 flex items-center text-sm text-ink-500">🔍 Tìm theo tên…</div><div class="h-10 px-4 rounded-xl border flex items-center text-sm">Lớp: Tất cả ▾</div></div></div>
+<table class="w-full text-sm"><tr class="text-ink-500 text-left"><th class="py-2">Bé</th><th>Lớp</th><th>Ngày sinh</th><th>Phụ huynh</th><th>Lưu ý</th></tr>
+<tr class="border-t"><td class="py-3 flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-peach-100 flex items-center justify-center">🐻</span>Nguyễn Minh An</td><td>Chồi 2</td><td>12/03/2022</td><td>0909 xxx 123</td><td><span class="px-2 py-1 rounded-full bg-rose-100 text-rose-500 text-xs">Dị ứng</span></td></tr>
+<tr class="border-t"><td class="py-3 flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-mint-100 flex items-center justify-center">🐰</span>Trần Bảo Ngọc</td><td>Mầm 1</td><td>05/09/2023</td><td>0912 xxx 456</td><td>–</td></tr></table>
+<p class="text-xs text-ink-500 mt-4">Trang 1/14 · 268 trẻ (dữ liệu mẫu)</p></section>
+<!-- ATTENDANCE MOBILE -->
+<section class="w-[360px] h-[700px] rounded-[40px] border-8 border-ink-900 bg-cream overflow-hidden relative">
+<div class="bg-mint-500 text-white p-5 pb-8 rounded-b-3xl"><p class="text-sm opacity-90">Lớp Chồi 2 · 09/10</p><h2 class="text-2xl font-bold">Điểm danh</h2><p class="text-sm mt-1">22/25 đã điểm · chạm để đổi trạng thái</p></div>
+<div class="grid grid-cols-3 gap-3 p-4 -mt-4">
+<div class="bg-white rounded-2xl p-3 text-center shadow ring-2 ring-mint-500"><div class="text-3xl">🐻</div><p class="text-xs font-medium mt-1">An</p><p class="text-[11px] text-mint-700">Có mặt</p></div>
+<div class="bg-white rounded-2xl p-3 text-center shadow ring-2 ring-mint-500"><div class="text-3xl">🐰</div><p class="text-xs font-medium mt-1">Bảo</p><p class="text-[11px] text-mint-700">Có mặt</p></div>
+<div class="bg-white rounded-2xl p-3 text-center shadow ring-2 ring-rose-500"><div class="text-3xl">🦊</div><p class="text-xs font-medium mt-1">Chi</p><p class="text-[11px] text-rose-500">Vắng</p></div>
+<div class="bg-white rounded-2xl p-3 text-center shadow ring-2 ring-sun-500"><div class="text-3xl">🐼</div><p class="text-xs font-medium mt-1">Dũng</p><p class="text-[11px] text-amber-600">Đi muộn</p></div>
+<div class="bg-white rounded-2xl p-3 text-center shadow ring-2 ring-mint-500"><div class="text-3xl">🐯</div><p class="text-xs font-medium mt-1">Hà</p><p class="text-[11px] text-mint-700">Có mặt</p></div>
+<div class="bg-white rounded-2xl p-3 text-center shadow border-2 border-dashed border-ink-100"><div class="text-3xl opacity-40">🐨</div><p class="text-xs font-medium mt-1">Khoa</p><p class="text-[11px] text-ink-500">Chưa điểm</p></div></div>
+<div class="absolute bottom-6 left-4 right-4 h-14 rounded-2xl bg-peach-500 text-white font-semibold flex items-center justify-center shadow-lg">Lưu điểm danh cả lớp</div></section></div>
+<!-- DESIGN SYSTEM -->
+<section class="bg-white rounded-3xl p-6 shadow"><h2 class="text-xl font-semibold mb-4">Design system</h2>
+<div class="flex gap-4 text-xs"><div><div class="w-20 h-14 rounded-xl bg-mint-500"></div>Mint 500 #2EBF91</div><div><div class="w-20 h-14 rounded-xl bg-peach-500"></div>Peach 500 #FF8A4C</div><div><div class="w-20 h-14 rounded-xl bg-sun-500"></div>Sun #FFCB2F</div><div><div class="w-20 h-14 rounded-xl bg-rose-500"></div>Rose #F2546B</div><div><div class="w-20 h-14 rounded-xl bg-ink-900"></div>Ink #1F2A37</div><div><div class="w-20 h-14 rounded-xl bg-cream border"></div>Cream #FFFCF7</div>
+<div class="ml-8 space-y-2"><div class="h-12 px-6 rounded-xl bg-mint-500 text-white font-semibold flex items-center">Nút chính</div><div class="h-12 px-6 rounded-xl border-2 border-mint-500 text-mint-700 font-semibold flex items-center">Nút phụ</div></div>
+<div class="ml-8"><p class="text-3xl font-bold">H1 28 Be Vietnam Pro</p><p class="text-lg font-semibold">H3 18 semibold</p><p>Body 15 regular</p></div></div></section>
+</body></html>
